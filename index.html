@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-       <nav>
-           <a href="/" aria-label="welcome to suite international">
-                <img src="./assets/logo.svg" alt="">
-           </a>
-           <a href="/">Request beta access</a>
-       </nav>
-    </header>
-    <main>
+    <div class="wrapper">
+        <header class="container">
+            <nav class="flex">
+                <a href="./" aria-label="welcome to suite international">
+                    <img src="./assets/logo.svg" alt="">
+                </a>
+                <a href="./" class="btn-request">Request beta access</a>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-content-img-container flex">
+                        <img class="hero-content-img" src="./assets/pattern-curved-line-1.svg" alt="">
+                    </div>
+                    <h1 class="hero-content-title">
+                        <span class="hero-text-light">A</span> super solution
+                        <span class="hero-text-light">for your</span> business.
+                    </h1>
+                    <p class="hero-content-text">
+                        Our marketing and sales automations help you scale your outreach to
+                        get more leads for your company.
+                    </p>
+                    <a href="/" class="btn-request btn-request-main">
+                        Request Beta Access
+                    </a>
 
-    </main>
-    <footer>
+                </div>
+                <div class="hero-image">
 
-    </footer>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
 </body>
+
 </html>

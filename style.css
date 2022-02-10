@@ -1,5 +1,170 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul,
+ol elements with a list role,
+which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 :root {
     /******************************
     *    Colours                  *
     ******************************/
+    --clr-dark-grey: 219 43% 16%;
+    --clr-med-grey: 218 20% 36%;
+    --clr-light-peach: 20 33% 93%;
+    --clr-off-white: 20 29% 97%;
+    --clr-blue: 264 100% 69%;
+    --clr-purple: 292 76% 54%;
+    --clr-orange: 31 100% 65%;
+
+    --spacer-three-quarters: .75rem;
+    --spacer-1: 1rem;
+    --spacer-1-5: 1.5rem;
+
+    --fs-16: 1rem;
+    --fs-14: 0.875rem;
+    --fs-18: 1.125rem;
+    --fs-38: 2.375rem;
+
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.container {
+    padding-block: var(--spacer-1-5);
+    padding-inline: var(--spacer-1);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    margin-top: .5rem;
+}
+
+.hero-content-img-container {
+    justify-content: end;
+    align-items: baseline;
+}
+
+.hero-content-img {
+    /*transform: scale(0.52);*/
+    width: 44.5%;
+}
+
+.btn-request {
+    display: inline-block;
+    font-size: var(--fs-14);
+    line-height: 1.7;
+    text-decoration: none;
+    color: hsl(var(--clr-dark-grey));
+    padding: var(--spacer-three-quarters) var(--spacer-1);
+    border: 1px solid hsl(var(--clr-dark-grey));
+    border-radius: 6px;
+    text-align: center;
+}
+
+.btn-request-main {
+    color: hsl(var(--clr-off-white));
+    background-color: hsl(var(--clr-dark-grey));
+    font-size: var(--fs-18);
+    margin-block: var(--spacer-1);
+
+}
+
+.hero-content-title {
+    font-size: var(--fs-38);
+}
+
+.hero-text-light {
+    font-weight: 300;
+}
+
+.hero-content-text {
+    font-size: var(--fs-16);
+    line-height: 1.75;
 }
