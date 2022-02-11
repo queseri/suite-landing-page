@@ -26,24 +26,61 @@
         <main class="container">
             <div class="hero">
                 <div class="hero-content">
-                    <div class="hero-content-img-container flex">
-                        <img class="hero-content-img" src="./assets/pattern-curved-line-1.svg" alt="">
+                    <div class="hero-content-container">
+                        <div class="hero-content-img-container flex">
+                            <img class="hero-content-img" src="./assets/pattern-curved-line-1.svg" alt="">
+                        </div>
+                        <h1 class="hero-content-title">
+                            <span class="hero-text-light">A</span> super solution
+                            <span class="hero-text-light">for your</span> business.
+                        </h1>
+                        <p class="hero-content-text">
+                            Our marketing and sales automations help you scale your outreach to
+                            get more leads for your company.
+                        </p>
+                        <a href="/" class="btn-request btn-request-main">
+                            Request Beta Access
+                        </a>
                     </div>
-                    <h1 class="hero-content-title">
-                        <span class="hero-text-light">A</span> super solution
-                        <span class="hero-text-light">for your</span> business.
-                    </h1>
-                    <p class="hero-content-text">
-                        Our marketing and sales automations help you scale your outreach to
-                        get more leads for your company.
-                    </p>
-                    <a href="/" class="btn-request btn-request-main">
-                        Request Beta Access
-                    </a>
-
                 </div>
-                <div class="hero-image">
 
+                <div class="hero-image-container">
+                    <picture>
+                        <source media="(min-width: 67.5rem)"
+                            srcset="./assets/image-hero-portrait@2x.png, ./assets/image-hero-portrait@2x.webp">
+                        <!--  <source media="(min-width: 51.25rem)"
+                            srcset="./assets/image-hero-landscape@2x.png, ./assets/image-hero-landscape@2x.webp">
+                      -->
+                        <source media="(min-width: 45rem)"
+                            srcset="./assets/image-hero-portrait.png, ./assets/image-hero-portrait.webp">
+                        <img class="hero-image" src="./assets/image-hero-landscape.png" alt=""
+                            srcset="./assets/image-hero-landscape@2x.png, 
+                        ./assets/image-hero-landscape.webp, ./assets/image-hero-landscape@2x.webp">
+                    </picture>
+                </div>
+
+                <div class="statistics">
+                    <ul class="statistics-list">
+                        <li>
+                            <p class="statistics-list-item">
+                                <span class="stats-title">2K+</span>
+                                <span class="stats-content">Companies</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="statistics-list-item">
+                                <span class="stats-title">8</span>
+                                <span class="stats-content">Languages</span>
+
+                            </p>
+                        </li>
+                        <li>
+                            <p class="statistics-list-item">
+                                <span class="stats-title">1.2M</span>
+                                <span class="stats-content">Leads</span>
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </main>
