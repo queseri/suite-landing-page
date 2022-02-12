@@ -15,15 +15,15 @@
 
 <body>
     <div class="wrapper">
-        <header class="container">
+        <header class="container max-width">
             <nav class="flex">
                 <a href="./" aria-label="welcome to suite international">
                     <img src="./assets/logo.svg" alt="">
                 </a>
-                <a href="./" class="btn-request">Request beta access</a>
+                <a href="./" class="btn-request text-dark">Request beta access</a>
             </nav>
         </header>
-        <main class="container">
+        <main class="container max-width">
             <div class="hero">
                 <div class="hero-content">
                     <div class="hero-content-container">
@@ -38,23 +38,20 @@
                             Our marketing and sales automations help you scale your outreach to
                             get more leads for your company.
                         </p>
-                        <a href="/" class="btn-request btn-request-main">
+                        <a href="/" class="btn-request btn-request-main bg-dark-blue text-light">
                             Request Beta Access
                         </a>
                     </div>
                 </div>
 
-                <div class="hero-image-container">
+                <div class="hero-image-container border-radius">
                     <picture>
                         <source media="(min-width: 67.5rem)"
                             srcset="./assets/image-hero-portrait@2x.png, ./assets/image-hero-portrait@2x.webp">
-                        <!--  <source media="(min-width: 51.25rem)"
-                            srcset="./assets/image-hero-landscape@2x.png, ./assets/image-hero-landscape@2x.webp">
-                      -->
+
                         <source media="(min-width: 45rem)"
                             srcset="./assets/image-hero-portrait.png, ./assets/image-hero-portrait.webp">
-                        <img class="hero-image" src="./assets/image-hero-landscape.png" alt=""
-                            srcset="./assets/image-hero-landscape@2x.png, 
+                        <img class="hero-image" src="./assets/image-hero-landscape.png" alt="" srcset="./assets/image-hero-landscape@2x.png, 
                         ./assets/image-hero-landscape.webp, ./assets/image-hero-landscape@2x.webp">
                     </picture>
                 </div>
@@ -64,26 +61,59 @@
                         <li>
                             <p class="statistics-list-item">
                                 <span class="stats-title">2K+</span>
-                                <span class="stats-content">Companies</span>
+                                <span class="stats-content uppercase">Companies</span>
                             </p>
                         </li>
                         <li>
                             <p class="statistics-list-item">
                                 <span class="stats-title">8</span>
-                                <span class="stats-content">Languages</span>
+                                <span class="stats-content uppercase">Languages</span>
 
                             </p>
                         </li>
                         <li>
                             <p class="statistics-list-item">
                                 <span class="stats-title">1.2M</span>
-                                <span class="stats-content">Leads</span>
+                                <span class="stats-content uppercase">Leads</span>
                             </p>
                         </li>
                     </ul>
                 </div>
             </div>
         </main>
+        <aside class="aside-container bg-dark-blue text-light border-radius">
+            <div class="aside-image-container">
+                <picture>
+                    <source media="(min-width: 67.5rem)"
+                        srcset="./assets/image-jeremy-large@2x.png, ./assets/image-jeremy-large@2x.webp">
+
+                    <source media="(min-width: 45rem)"
+                        srcset="./assets/image-jeremy-large.png, ./assets/image-jeremy-large.webp">
+                    <img class="hero-image" src="./assets/image-jeremy-small.png" alt="" srcset="./assets/image-jeremy-small@2x.png, 
+                ./assets/image-jeremy-small.webp, ./assets/image-jeremy-small@2x.webp">
+                </picture>
+            </div>
+            <div class="secondary container">
+                <div class="secondary-img-container flex">
+                    <img class="secondary-content-img" src="./assets/pattern-curved-line-2.svg" alt="">
+                </div>
+                <h2 class="secondary-title">
+                    <span class="secondary-text-light">It just</span> works.
+                </h2>
+                <blockquote>
+                    <p class="quorte">
+                        "I really like how it is an all-in-one solution that handle many of
+                        the tasks that you would normally need separate tools to do the same
+                        job. This thing is a miracle worker."
+                    </p>
+                </blockquote>
+
+                <div>
+                    <h3 class="quorte-title uppercase">Jeremy Robinson</h3>
+                    <p class="quorte-content uppercase">CMO, Fylo</p>
+                </div>
+            </div>
+        </aside>
         <footer>
         </footer>
     </div>
