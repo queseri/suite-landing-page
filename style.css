@@ -453,25 +453,31 @@ body {
     }
 
     .hero-image.aside-hero-image {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 
     .aside-container {
         display: flex;
         margin-inline: auto;
+        margin-block-start: 8.5rem;
         margin-block-end: -20rem;
+        align-items: center;
     }
 
-    .aside-image-container {
-        top: -2rem;
+    .aside-image-container {       
+        top: -1rem;
         padding-inline: 2.35rem;
+        flex: 1 1 45%;
     }
 
     .secondary {
         margin-block-start: 0;
+        padding-block: 0;
+        flex: 1 1 60%;
     }
 
     .footer-container {
         margin-inline: auto;
+        padding-block-start: 25.5rem;
     }
 }
