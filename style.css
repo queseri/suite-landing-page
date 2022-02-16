@@ -95,7 +95,7 @@ select {
     --clr-blue: 264 100% 69%;
     --clr-purple: 292 76% 54%;
     --clr-orange: 31 100% 65%;
-
+   
     --spacer-three-quarters: .75rem;
     --spacer-four-fifth: .8rem;
     --spacer-1: 1rem;
@@ -217,7 +217,8 @@ body {
 
 .btn-request-main:hover,
 .btn-request-main:focus {
-    outline: dashed hsl(var(--clr-dark-grey));
+    outline: dashed hsl(var(--clr-dark-grey));    
+    background-image: linear-gradient(to bottom right, hsl(var(--clr-blue)), hsl(var(--clr-purple)), hsl(var(--clr-orange)));
 }
 
 .hero-content-title {
