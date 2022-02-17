@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Author: Chamu Mutezva, Designer: P. Frontend Mentor, Category: Web development">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap"
@@ -19,7 +21,7 @@
         <header class="container max-width">
             <nav class="flex">
                 <a href="./" class="nav" aria-label="welcome to suite international">
-                    <img src="./assets/logo.svg" alt="">
+                    <img src="./assets/logo.svg" width="79" height="26" alt="" aria-hidden="true">
                 </a>
                 <a href="./" class="btn-request text-dark">Request beta access</a>
             </nav>
@@ -29,7 +31,8 @@
                 <div class="hero-content">
                     <div class="hero-content-container">
                         <div class="hero-content-img-container flex">
-                            <img class="hero-content-img" src="./assets/pattern-curved-line-1.svg" alt="">
+                            <img class="hero-content-img" width="289" height="39"
+                                src="./assets/pattern-curved-line-1.svg" alt="">
                         </div>
                         <h1 class="hero-content-title">
                             <span class="hero-text-light">A</span> super solution
@@ -47,13 +50,19 @@
 
                 <div class="hero-image-container border-radius">
                     <picture>
-                        <!-- <source media="(min-width: 67.5rem)"
-                            srcset="./assets/image-hero-portrait@2x.png, ./assets/image-hero-portrait@2x.webp">
-                      -->
-                        <source media="(min-width: 45rem)" srcset="./assets/image-hero-portrait.png, ./assets/image-hero-portrait.webp,
-                            ./assets/image-hero-portrait@2x.png, ./assets/image-hero-portrait@2x.webp">
-                        <img class="hero-image" src="./assets/image-hero-landscape.png" alt="" srcset="./assets/image-hero-landscape@2x.png, 
-                        ./assets/image-hero-landscape.webp, ./assets/image-hero-landscape@2x.webp">
+                        
+                        <source media="(min-width: 67.5rem)"
+                         srcset="./assets/image-hero-portrait@2x.png 2x, 
+                            ./assets/image-hero-portrait@2x.webp 2x">
+                        
+                        <source media="(min-width: 45rem)"
+                         srcset="./assets/image-hero-portrait.webp,
+                         ./assets/image-hero-portrait.png">
+                        <img class="hero-image" src="./assets/image-hero-landscape.webp" 
+                            alt="" srcset="
+                             ./assets/image-hero-landscape@2x.webp 2x, 
+                             ./assets/image-hero-landscape.png,
+                              ./assets/image-hero-landscape@2x.png 2x">
                     </picture>
                 </div>
 
@@ -85,19 +94,25 @@
         <aside class="aside-container bg-dark-blue text-light border-radius">
             <div class="aside-image-container">
                 <picture>
+                  
                     <source media="(min-width: 67.5rem)"
-                        srcset="./assets/image-jeremy-large@2x.png, ./assets/image-jeremy-large@2x.webp">
-
+                        srcset="./assets/image-jeremy-large@2x.webp,
+                         ./assets/image-jeremy-large@2x.png 2x">
+                  
                     <source media="(min-width: 45rem)"
-                        srcset="./assets/image-jeremy-large.png, ./assets/image-jeremy-large.webp">
-                    <img class="hero-image aside-hero-image" src="./assets/image-jeremy-small.png" alt="" srcset="./assets/image-jeremy-small@2x.png, 
-                ./assets/image-jeremy-small.webp, ./assets/image-jeremy-small@2x.webp,
-                ./assets/image-jeremy-large@2x.png, ./assets/image-jeremy-large@2x.webp">
+                     srcset="./assets/image-jeremy-large.webp, 
+                        ./assets/image-jeremy-large.png">
+                    <img class="hero-image aside-hero-image" 
+                        src="./assets/image-jeremy-small.webp" alt=""
+                         srcset="./assets/image-jeremy-small.png,
+                         ./assets/image-jeremy-small@2x.webp 2x,                      
+                      ./assets/image-jeremy-small@2x.png 2x">
                 </picture>
             </div>
             <div class="secondary container">
                 <div class="secondary-img-container flex">
-                    <img class="secondary-content-img" src="./assets/pattern-curved-line-2.svg" alt="">
+                    <img class="secondary-content-img" width="66" height="54" src="./assets/pattern-curved-line-2.svg"
+                        alt="">
                 </div>
                 <div class="secondary-main">
                     <h2 class="secondary-title">
@@ -122,7 +137,7 @@
             <div class="footer-container">
                 <div class="footer-nav">
                     <a href="./" class="nav" aria-label="welcome to suite international">
-                        <img src="./assets/logo.svg" alt="">
+                        <img src="./assets/logo.svg" width="79" height="26" alt="">
                     </a>
                 </div>
                 <div class="copyright">
@@ -131,22 +146,22 @@
                 <div class="social-media">
                     <ul class="social-media-list">
                         <li class="social-media-list-item">
-                            <a href="https://www.facebook.com/" aria-labelledby="lbl-facebook">
+                            <a href="https://www.facebook.com/" aria-labelledby="lbl-facebook" class="social-link">
                                 <span id="lbl-facebook" class="sr-only">visit us on our facebook page</span>
-                                <img src="./assets/icon-facebook.svg" aria-hidden="true" alt="">
+                                <img src="./assets/icon-facebook.svg" width="20" height="20" aria-hidden="true" alt="">
                             </a>
                         </li>
                         <li class="social-media-list-item">
-                            <a href="https://twitter.com/home" aria-labelledby="lbl-twitter">
+                            <a href="https://twitter.com/home" aria-labelledby="lbl-twitter" class="social-link">
                                 <span id="lbl-twitter" class="sr-only">talk to us on our twitter page</span>
-                                <img src="./assets/icon-twitter.svg" aria-hidden="true" alt="">
+                                <img src="./assets/icon-twitter.svg" width="20" height="17" aria-hidden="true" alt="">
                             </a>
                         </li>
                         <li class="social-media-list-item">
-                            <a href="https://www.instagram.com" aria-labelledby="lbl-instagram">
+                            <a href="https://www.instagram.com" aria-labelledby="lbl-instagram" class="social-link">
                                 <span id="lbl-instagram" class="sr-only">for more products view our instagram
                                     page</span>
-                                <img src="./assets/icon-instagram.svg" aria-hidden="true" alt="">
+                                <img src="./assets/icon-instagram.svg" width="20" height="20" aria-hidden="true" alt="">
                             </a>
                         </li>
                     </ul>
