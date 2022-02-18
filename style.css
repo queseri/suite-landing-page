@@ -98,7 +98,7 @@ select {
 
     /******************************
     *    SPACINGS                 *
-    ******************************/   
+    ******************************/
     --spacer-three-quarters: .75rem;
     --spacer-four-fifth: .8rem;
     --spacer-1: 1rem;
@@ -192,7 +192,7 @@ body {
     align-items: baseline;
 }
 
-.hero-content-img {    
+.hero-content-img {
     width: 44.5%;
 }
 
@@ -222,7 +222,7 @@ body {
 
 .btn-request-main:hover,
 .btn-request-main:focus {
-    outline: dashed hsl(var(--clr-dark-grey));    
+    outline: dashed hsl(var(--clr-dark-grey));
     background-image: linear-gradient(to bottom right, hsl(var(--clr-blue)), hsl(var(--clr-purple)), hsl(var(--clr-orange)));
 }
 
@@ -271,9 +271,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-.nav, .social-link {
+
+.nav,
+.social-link {
     outline: none;
 }
+
 .nav:hover,
 .nav:focus,
 .social-link:hover,
@@ -292,7 +295,10 @@ body {
     margin-block-start: 13.5rem;
     position: relative;
     overflow: visible;
-
+    background-image: url("./assets/pattern-blur.svg");
+    background-position: top center;
+    background-size: 55%;
+    background-repeat: no-repeat;
 }
 
 .aside-image-container {
@@ -384,7 +390,7 @@ body {
     }
 
     .hero-content {
-        position: relative;       
+        position: relative;
     }
 
     .hero-image-container {
@@ -431,6 +437,7 @@ body {
     }
 
     .aside-container {
+        background-size: 40%;
         margin-inline: var(--spacer-2-4);
         max-width: 61.25rem;
         margin-block-start: 14rem;
@@ -493,8 +500,10 @@ body {
     .hero-image.aside-hero-image {
         transform: scale(1.05);
     }
-
+   
     .aside-container {
+        background-position: bottom left;
+        background-size: 50%;
         display: flex;
         margin-inline: auto;
         margin-block-start: 8.5rem;
