@@ -50,6 +50,16 @@ Users should be able to:
 
 ### What I learned
 
+** CSS Utility classes ** - classes that are attached to the HTML as usual to do a specific thing.
+Place the class on any element, as in the example below , the `flex` class is placed on any element that has to be centered and aligned using flex.
+
+```CSS
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
 
 ### Continued development
 
