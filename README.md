@@ -66,6 +66,7 @@ Place the class on any element, as in the example below , the `flex` class is pl
 
 ### Useful resources
 
+![Lighthouse](./assets/lighthouse.png)
 
 ## Author
 
